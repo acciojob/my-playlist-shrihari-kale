@@ -3,8 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Playlist</title>
+    <title>My Playlist</title>
+
+    <!-- CSS -->
+    <style>
+        /* === Page Styling === */
+        body {
+            background-color: rgb(204, 204, 204);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* === Headings === */
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* === Playlist Box === */
+        .playlist-box {
+            background-color: rgb(255, 255, 255);
+            width: 90%;
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        /* IMPORTANT for Cypress */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+
+        /* === Player Containers === */
+        .player-container {
+            background-color: rgb(255, 255, 255);
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+        }
+.player_two {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+}
+        p {
+            text-align: left;
+        }
+
+        video {
+            width: 90%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        audio {
+            width: 100%;
+            height: 40px;
+        }
+
+        /* === Links === */
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- Main Heading -->
@@ -33,16 +117,16 @@
     
 
     <!-- MP3 Section -->
-    <h2>MP3 songs</h2>
+    <h2>MP3 Songs</h2>
 
     <!-- Audio Player -->
-    <div class="player_two">
+    <div class="player-container player_two">
         <p>Maan Meri Jaan</p>
-        <audio controls >
+        <audio controls>
             <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
-	</div>
+    </div>
 </body>
 </html>
